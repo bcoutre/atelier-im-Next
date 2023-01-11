@@ -57,6 +57,7 @@ const Footer = (props) => {
           .footer-text {
             color: var(--dl-color-grays-gray100);
             max-width: 350px;
+            text-align: center;
             margin-bottom: 60px;
           }
           .footer-social-media {
