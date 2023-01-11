@@ -1,0 +1,22 @@
+name: Build docker
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3.4.1
+        with:
+          node-version: 16
+      - 
+        name: Build Docker image for ${{ github.repository }}
+        uses: macbre/push-to-ghcr@master
+        with:
+          image_name: ${{ github.repository }}
+          image_tag: ${{ github.ref.name }}
+          dockerfile: CICD/Dockerfile
+          github_token: ${{ secrets.GITHUB_TOKEN }}
