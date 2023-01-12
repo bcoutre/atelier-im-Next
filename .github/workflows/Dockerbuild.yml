@@ -20,4 +20,5 @@ jobs:
           image_tag: atelier-im
           dockerfile: CICD/Dockerfile
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          repository: docker.io
           docker_io_token: $ {{ secrets.DOCKER_IO_ACCESS_TOKEN}}
