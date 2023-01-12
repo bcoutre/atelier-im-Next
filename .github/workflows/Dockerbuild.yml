@@ -12,7 +12,8 @@ jobs:
       - uses: actions/setup-node@v3.4.1
         with:
           node-version: 16
-      - 
+      - run: echo ${{ secrets.DOCKER_IO_ACCESS_TOKEN }} 
+      -
         name: Build Docker image for ${{ github.repository }}
         uses: macbre/push-to-ghcr@master
         with:
