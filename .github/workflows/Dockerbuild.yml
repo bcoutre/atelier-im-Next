@@ -20,3 +20,4 @@ jobs:
           image_tag: ${{ github.ref.name }}
           dockerfile: CICD/Dockerfile
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          docker_io_token: $ {{ secrets.DOCKER_IO_ACCESS_TOKEN}}
