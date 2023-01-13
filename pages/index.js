@@ -17,7 +17,8 @@ const Home = (props) => {
               <div className="home-image-container">
                 <img
                   alt="image"
-                  src="/playground_assets/logo_facebook.png"
+                  src="/playground_assets/logo_site-500h.png"
+                  loading="eager"
                   className="home-image"
                 />
               </div>
@@ -116,6 +117,7 @@ const Home = (props) => {
             align-items: center;
             flex-direction: column;
             justify-content: center;
+            background-color: var(--dl-color-backgrounds-gray);
           }
           .home-image {
             flex: 1;
@@ -167,7 +169,7 @@ const Home = (props) => {
           }
           .home-text05 {
             color: var(--dl-color-grays-gray60);
-            background-color: var(--dl-color-grays-white100);
+            background-color: var(--dl-color-backgrounds-gray);
           }
           .home-container2 {
             width: 100%;
