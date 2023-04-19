@@ -1,9 +1,8 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-
 class CustomDocument extends Document {
   render() {
     return (
-      <Html lang="en">
+      <Html lang="fr">
         <Head>
           <meta
             name="viewport"
@@ -57,5 +56,4 @@ class CustomDocument extends Document {
     )
   }
 }
-
 export default CustomDocument

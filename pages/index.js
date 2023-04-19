@@ -8,8 +8,16 @@ const Home = (props) => {
     <>
       <div className="home-container">
         <Head>
-          <title>atelier-im</title>
-          <meta property="og:title" content="atelier-im" />
+          <title>Atelier Informatique et Media</title>
+          <meta
+            name="description"
+            content="Vente, dépannage, réparation, configuration en informatique"
+          />
+          <meta property="og:title" content="Atelier Informatique et Media" />
+          <meta
+            property="og:description"
+            content="Vente, dépannage, réparation, configuration en informatique"
+          />
         </Head>
         <main className="home-main">
           <div className="section-container">
