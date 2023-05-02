@@ -7,14 +7,13 @@ const Footer = (props) => {
         <div className="footer-max-width max-content-container">
           <div className="footer-container">
             <span className="footer-text">
-              <span>Du lundi au vendredi :</span>
+              <span>Horaires : </span>
               <br></br>
-              <span> 9h30 – 12h30</span>
+              <span>Sur Rendez-vous</span>
               <br></br>
-              <span> 14h00 – 17h30</span>
             </span>
             <div className="footer-social-media">
-              <span className="footer-text6">Suivez nous :</span>
+              <span className="footer-text5">Suivez nous :</span>
               <a
                 href="https://www.facebook.com/AtelierInformatiqueMedia/"
                 target="_blank"
@@ -66,7 +65,7 @@ const Footer = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .footer-text6 {
+          .footer-text5 {
             font-size: 18px;
             font-style: normal;
             font-weight: 600;

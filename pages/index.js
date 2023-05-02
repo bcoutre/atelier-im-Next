@@ -20,7 +20,7 @@ const Home = (props) => {
           />
         </Head>
         <main className="home-main">
-          <div className="section-container">
+          <div className="home-hero section-container">
             <div className="home-max-width max-content-container">
               <div className="home-image-container">
                 <img
@@ -32,11 +32,13 @@ const Home = (props) => {
               </div>
               <div className="home-content-container">
                 <h1 className="home-text">
-                  <span className="home-text1">6 Rue des écoles</span>
+                  <span className="home-text01">65 Montée des Lauzes</span>
                   <br></br>
                   <span>07190 Saint Sauveur de Montagut</span>
                   <br></br>
                 </h1>
+                <span className="home-text05"></span>
+                <span className="home-text06">Accueil sur rendez-vous</span>
                 <div className="home-input-container">
                   <div className="home-container1 input">
                     <a href="tel:+33614828570" className="home-link">
@@ -76,7 +78,7 @@ const Home = (props) => {
                     >
                       <path d="M733.714 419.429c0-9.714-3.429-19.429-10.286-26.286l-52-51.429c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-233.143 232.571-129.143-129.143c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-52 51.429c-6.857 6.857-10.286 16.571-10.286 26.286s3.429 18.857 10.286 25.714l206.857 206.857c6.857 6.857 16.571 10.857 25.714 10.857 9.714 0 19.429-4 26.286-10.857l310.286-310.286c6.857-6.857 10.286-16 10.286-25.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"></path>
                     </svg>
-                    <span className="home-text5">
+                    <span className="home-text07">
                       Dépannage, Installation, Configuration, Vente en
                       Informatique et Réseaux
                     </span>
@@ -88,7 +90,7 @@ const Home = (props) => {
                     >
                       <path d="M733.714 419.429c0-9.714-3.429-19.429-10.286-26.286l-52-51.429c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-233.143 232.571-129.143-129.143c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-52 51.429c-6.857 6.857-10.286 16.571-10.286 26.286s3.429 18.857 10.286 25.714l206.857 206.857c6.857 6.857 16.571 10.857 25.714 10.857 9.714 0 19.429-4 26.286-10.857l310.286-310.286c6.857-6.857 10.286-16 10.286-25.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"></path>
                     </svg>
-                    <span className="home-text6">Tous travaux media</span>
+                    <span className="home-text08">Tous travaux media</span>
                   </div>
                   <div className="home-feature2">
                     <svg
@@ -97,7 +99,7 @@ const Home = (props) => {
                     >
                       <path d="M733.714 419.429c0-9.714-3.429-19.429-10.286-26.286l-52-51.429c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-233.143 232.571-129.143-129.143c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-52 51.429c-6.857 6.857-10.286 16.571-10.286 26.286s3.429 18.857 10.286 25.714l206.857 206.857c6.857 6.857 16.571 10.857 25.714 10.857 9.714 0 19.429-4 26.286-10.857l310.286-310.286c6.857-6.857 10.286-16 10.286-25.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"></path>
                     </svg>
-                    <span className="home-text7">
+                    <span className="home-text09">
                       Sites web, boutiques en ligne
                     </span>
                   </div>
@@ -128,6 +130,10 @@ const Home = (props) => {
             align-items: center;
             flex-direction: column;
           }
+          .home-hero {
+            padding-top: 38px;
+            padding-bottom: 0px;
+          }
           .home-max-width {
             align-items: stretch;
           }
@@ -152,14 +158,19 @@ const Home = (props) => {
             display: flex;
             min-width: 50%;
             align-items: flex-start;
-            padding-right: var(--dl-space-space-twounits);
             flex-direction: column;
             justify-content: center;
           }
           .home-text {
             width: 90%;
             font-size: 30px;
-            margin-bottom: 42px;
+            margin-bottom: var(--dl-space-space-unit);
+          }
+          .home-text05 {
+            align-self: center;
+          }
+          .home-text06 {
+            align-self: center;
           }
           .home-input-container {
             flex: 0 0 auto;
@@ -177,10 +188,9 @@ const Home = (props) => {
             line-height: 1.5;
             padding-top: var(--dl-space-space-unit);
             border-width: 0px;
-            margin-right: var(--dl-space-space-halfunit);
             padding-left: var(--dl-space-space-oneandhalfunits);
             border-radius: 32px;
-            padding-right: var(--dl-space-space-oneandhalfunits);
+            padding-right: 0px;
             padding-bottom: var(--dl-space-space-unit);
             background-color: var(--dl-color-backgrounds-gray);
           }
@@ -250,7 +260,7 @@ const Home = (props) => {
             min-width: 17px;
             margin-right: 12px;
           }
-          .home-text5 {
+          .home-text07 {
             color: var(--dl-color-grays-gray60);
             font-size: 14px;
             font-style: normal;
@@ -271,7 +281,7 @@ const Home = (props) => {
             min-width: 17px;
             margin-right: 12px;
           }
-          .home-text6 {
+          .home-text08 {
             color: var(--dl-color-grays-gray60);
             font-size: 14px;
             font-style: normal;
@@ -291,7 +301,7 @@ const Home = (props) => {
             min-width: 17px;
             margin-right: 12px;
           }
-          .home-text7 {
+          .home-text09 {
             color: var(--dl-color-grays-gray60);
             font-size: 14px;
             font-style: normal;
@@ -308,7 +318,7 @@ const Home = (props) => {
             .home-text {
               width: 100%;
             }
-            .home-text1 {
+            .home-text01 {
               width: 100%;
             }
           }
