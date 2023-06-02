@@ -187,8 +187,8 @@ const Navbar = (props) => {
 }
 
 Navbar.defaultProps = {
-  image_src: '/playground_assets/logo-1500h.png',
-  image_src1: '/playground_assets/logo-1500h.png',
+  image_src: '/logo-1500h.png',
+  image_src1: '/logo-1500h.png',
   image_alt: 'logo',
   image_alt1: 'image',
   text: 'Follow us',

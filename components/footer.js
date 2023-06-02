@@ -12,8 +12,14 @@ const Footer = (props) => {
               <span>Sur Rendez-vous</span>
               <br></br>
             </span>
+            <span className="footer-text05">
+              <span>65 Montée des Lauzes</span>
+              <br></br>
+              <span> 07190 Saint Sauveur de Montagut</span>
+              <br></br>
+            </span>
             <div className="footer-social-media">
-              <span className="footer-text5">Suivez nous :</span>
+              <span className="footer-text10">Suivez nous :</span>
               <a
                 href="https://www.facebook.com/AtelierInformatiqueMedia/"
                 target="_blank"
@@ -36,8 +42,10 @@ const Footer = (props) => {
       <style jsx>
         {`
           .footer-footer {
+            padding-top: var(--dl-space-space-halfunit);
             border-color: rgba(33, 33, 33, 0.1);
             border-width: 1px;
+            padding-bottom: var(--dl-space-space-unit);
             border-top-width: 0px;
             border-left-width: 0px;
             border-right-width: 0px;
@@ -56,8 +64,16 @@ const Footer = (props) => {
           .footer-text {
             color: var(--dl-color-grays-gray100);
             max-width: 350px;
+            margin-top: var(--dl-space-space-unit);
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: var(--dl-space-space-unit);
+          }
+          .footer-text05 {
+            color: var(--dl-color-grays-gray100);
+            max-width: 350px;
+            margin-top: 0px;
+            text-align: center;
+            margin-bottom: var(--dl-space-space-unit);
           }
           .footer-social-media {
             flex: 0 0 auto;
@@ -65,11 +81,11 @@ const Footer = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .footer-text5 {
+          .footer-text10 {
             font-size: 18px;
             font-style: normal;
             font-weight: 600;
-            margin-bottom: var(--dl-space-space-oneandhalfunits);
+            margin-bottom: 0px;
           }
           .footer-link {
             display: contents;

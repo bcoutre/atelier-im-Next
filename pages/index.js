@@ -25,26 +25,54 @@ const Home = (props) => {
               <div className="home-image-container">
                 <img
                   alt="image"
-                  src="/playground_assets/logo_site-500h.png"
+                  src="/logo_site-500h.png"
                   loading="eager"
                   className="home-image"
                 />
               </div>
               <div className="home-content-container">
-                <h1 className="home-text">
-                  <span className="home-text01">65 Montée des Lauzes</span>
-                  <br></br>
-                  <span>07190 Saint Sauveur de Montagut</span>
-                  <br></br>
-                </h1>
-                <span className="home-text05"></span>
-                <span className="home-text06">Accueil sur rendez-vous</span>
+                <div className="home-features-container">
+                  <div className="home-feature">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      className="home-icon"
+                    >
+                      <path d="M733.714 419.429c0-9.714-3.429-19.429-10.286-26.286l-52-51.429c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-233.143 232.571-129.143-129.143c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-52 51.429c-6.857 6.857-10.286 16.571-10.286 26.286s3.429 18.857 10.286 25.714l206.857 206.857c6.857 6.857 16.571 10.857 25.714 10.857 9.714 0 19.429-4 26.286-10.857l310.286-310.286c6.857-6.857 10.286-16 10.286-25.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"></path>
+                    </svg>
+                    <span className="home-text">
+                      Dépannage, Installation, Configuration, Vente en
+                      Informatique et Réseaux
+                    </span>
+                  </div>
+                  <div className="home-feature1">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      className="home-icon02"
+                    >
+                      <path d="M733.714 419.429c0-9.714-3.429-19.429-10.286-26.286l-52-51.429c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-233.143 232.571-129.143-129.143c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-52 51.429c-6.857 6.857-10.286 16.571-10.286 26.286s3.429 18.857 10.286 25.714l206.857 206.857c6.857 6.857 16.571 10.857 25.714 10.857 9.714 0 19.429-4 26.286-10.857l310.286-310.286c6.857-6.857 10.286-16 10.286-25.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"></path>
+                    </svg>
+                    <span className="home-text1">Tous travaux media</span>
+                  </div>
+                  <div className="home-feature2">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      className="home-icon04"
+                    >
+                      <path d="M733.714 419.429c0-9.714-3.429-19.429-10.286-26.286l-52-51.429c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-233.143 232.571-129.143-129.143c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-52 51.429c-6.857 6.857-10.286 16.571-10.286 26.286s3.429 18.857 10.286 25.714l206.857 206.857c6.857 6.857 16.571 10.857 25.714 10.857 9.714 0 19.429-4 26.286-10.857l310.286-310.286c6.857-6.857 10.286-16 10.286-25.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"></path>
+                    </svg>
+                    <span className="home-text2">
+                      Sites web, boutiques en ligne
+                    </span>
+                  </div>
+                </div>
+                <span className="home-text3"></span>
+                <span className="home-text4">Accueil sur rendez-vous :</span>
                 <div className="home-input-container">
                   <div className="home-container1 input">
                     <a href="tel:+33614828570" className="home-link">
                       <svg
                         viewBox="0 0 804.5714285714286 1024"
-                        className="home-icon"
+                        className="home-icon06"
                       >
                         <path d="M804.571 708.571c0 20.571-9.143 60.571-17.714 79.429-12 28-44 46.286-69.714 60.571-33.714 18.286-68 29.143-106.286 29.143-53.143 0-101.143-21.714-149.714-39.429-34.857-12.571-68.571-28-100-47.429-97.143-60-214.286-177.143-274.286-274.286-19.429-31.429-34.857-65.143-47.429-100-17.714-48.571-39.429-96.571-39.429-149.714 0-38.286 10.857-72.571 29.143-106.286 14.286-25.714 32.571-57.714 60.571-69.714 18.857-8.571 58.857-17.714 79.429-17.714 4 0 8 0 12 1.714 12 4 24.571 32 30.286 43.429 18.286 32.571 36 65.714 54.857 97.714 9.143 14.857 26.286 33.143 26.286 50.857 0 34.857-103.429 85.714-103.429 116.571 0 15.429 14.286 35.429 22.286 49.143 57.714 104 129.714 176 233.714 233.714 13.714 8 33.714 22.286 49.143 22.286 30.857 0 81.714-103.429 116.571-103.429 17.714 0 36 17.143 50.857 26.286 32 18.857 65.143 36.571 97.714 54.857 11.429 5.714 39.429 18.286 43.429 30.286 1.714 4 1.714 8 1.714 12z"></path>
                       </svg>
@@ -58,7 +86,7 @@ const Home = (props) => {
                       href="mailto:admin@atelier-im.com?subject=Demande d'informations"
                       className="home-link2"
                     >
-                      <svg viewBox="0 0 1024 1024" className="home-icon02">
+                      <svg viewBox="0 0 1024 1024" className="home-icon08">
                         <path d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z"></path>
                       </svg>
                     </a>
@@ -68,40 +96,6 @@ const Home = (props) => {
                     >
                       admin@atelier-im.com
                     </a>
-                  </div>
-                </div>
-                <div className="home-features-container">
-                  <div className="home-feature">
-                    <svg
-                      viewBox="0 0 877.7142857142857 1024"
-                      className="home-icon04"
-                    >
-                      <path d="M733.714 419.429c0-9.714-3.429-19.429-10.286-26.286l-52-51.429c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-233.143 232.571-129.143-129.143c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-52 51.429c-6.857 6.857-10.286 16.571-10.286 26.286s3.429 18.857 10.286 25.714l206.857 206.857c6.857 6.857 16.571 10.857 25.714 10.857 9.714 0 19.429-4 26.286-10.857l310.286-310.286c6.857-6.857 10.286-16 10.286-25.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"></path>
-                    </svg>
-                    <span className="home-text07">
-                      Dépannage, Installation, Configuration, Vente en
-                      Informatique et Réseaux
-                    </span>
-                  </div>
-                  <div className="home-feature1">
-                    <svg
-                      viewBox="0 0 877.7142857142857 1024"
-                      className="home-icon06"
-                    >
-                      <path d="M733.714 419.429c0-9.714-3.429-19.429-10.286-26.286l-52-51.429c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-233.143 232.571-129.143-129.143c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-52 51.429c-6.857 6.857-10.286 16.571-10.286 26.286s3.429 18.857 10.286 25.714l206.857 206.857c6.857 6.857 16.571 10.857 25.714 10.857 9.714 0 19.429-4 26.286-10.857l310.286-310.286c6.857-6.857 10.286-16 10.286-25.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"></path>
-                    </svg>
-                    <span className="home-text08">Tous travaux media</span>
-                  </div>
-                  <div className="home-feature2">
-                    <svg
-                      viewBox="0 0 877.7142857142857 1024"
-                      className="home-icon08"
-                    >
-                      <path d="M733.714 419.429c0-9.714-3.429-19.429-10.286-26.286l-52-51.429c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-233.143 232.571-129.143-129.143c-6.857-6.857-16-10.857-25.714-10.857s-18.857 4-25.714 10.857l-52 51.429c-6.857 6.857-10.286 16.571-10.286 26.286s3.429 18.857 10.286 25.714l206.857 206.857c6.857 6.857 16.571 10.857 25.714 10.857 9.714 0 19.429-4 26.286-10.857l310.286-310.286c6.857-6.857 10.286-16 10.286-25.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"></path>
-                    </svg>
-                    <span className="home-text09">
-                      Sites web, boutiques en ligne
-                    </span>
                   </div>
                 </div>
               </div>
@@ -157,20 +151,89 @@ const Home = (props) => {
             flex: 1;
             display: flex;
             min-width: 50%;
+            align-self: center;
             align-items: flex-start;
             flex-direction: column;
             justify-content: center;
           }
+          .home-features-container {
+            flex: 0 0 auto;
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+          }
+          .home-feature {
+            flex: 0 0 auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-direction: row;
+          }
+          .home-icon {
+            fill: #62bf77;
+            width: 17px;
+            height: 17px;
+            min-width: 17px;
+            margin-right: 12px;
+          }
           .home-text {
-            width: 90%;
-            font-size: 30px;
+            color: var(--dl-color-grays-gray60);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+          }
+          .home-feature1 {
+            flex: 0 0 auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-direction: row;
+          }
+          .home-icon02 {
+            fill: #62bf77;
+            width: 17px;
+            height: 17px;
+            min-width: 17px;
+            margin-right: 12px;
+          }
+          .home-text1 {
+            color: var(--dl-color-grays-gray60);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+          }
+          .home-feature2 {
+            flex: 0 0 auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
             margin-bottom: var(--dl-space-space-unit);
+            flex-direction: row;
           }
-          .home-text05 {
+          .home-icon04 {
+            fill: #62bf77;
+            width: 17px;
+            height: 17px;
+            min-width: 17px;
+            margin-right: 12px;
+          }
+          .home-text2 {
+            color: var(--dl-color-grays-gray60);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+          }
+          .home-text3 {
             align-self: center;
           }
-          .home-text06 {
-            align-self: center;
+          .home-text4 {
+            color: var(--dl-color-grays-gray60);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
           }
           .home-input-container {
             flex: 0 0 auto;
@@ -197,7 +260,7 @@ const Home = (props) => {
           .home-link {
             display: contents;
           }
-          .home-icon {
+          .home-icon06 {
             fill: var(--dl-color-grays-gray40);
             width: 20px;
             height: 20px;
@@ -227,7 +290,7 @@ const Home = (props) => {
           .home-link2 {
             display: contents;
           }
-          .home-icon02 {
+          .home-icon08 {
             fill: var(--dl-color-grays-gray60);
             width: 24px;
             height: 24px;
@@ -238,75 +301,6 @@ const Home = (props) => {
             text-decoration: underline;
             background-color: var(--dl-color-backgrounds-gray);
           }
-          .home-features-container {
-            flex: 0 0 auto;
-            width: 100%;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-          }
-          .home-feature {
-            flex: 0 0 auto;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-            flex-direction: row;
-          }
-          .home-icon04 {
-            fill: #62bf77;
-            width: 17px;
-            height: 17px;
-            min-width: 17px;
-            margin-right: 12px;
-          }
-          .home-text07 {
-            color: var(--dl-color-grays-gray60);
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-          }
-          .home-feature1 {
-            flex: 0 0 auto;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-            flex-direction: row;
-          }
-          .home-icon06 {
-            fill: #62bf77;
-            width: 17px;
-            height: 17px;
-            min-width: 17px;
-            margin-right: 12px;
-          }
-          .home-text08 {
-            color: var(--dl-color-grays-gray60);
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-          }
-          .home-feature2 {
-            flex: 0 0 auto;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-          }
-          .home-icon08 {
-            fill: #62bf77;
-            width: 17px;
-            height: 17px;
-            min-width: 17px;
-            margin-right: 12px;
-          }
-          .home-text09 {
-            color: var(--dl-color-grays-gray60);
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-          }
           @media (max-width: 991px) {
             .home-max-width {
               flex-direction: column;
@@ -314,12 +308,6 @@ const Home = (props) => {
             .home-content-container {
               margin-bottom: 42px;
               padding-right: 0px;
-            }
-            .home-text {
-              width: 100%;
-            }
-            .home-text01 {
-              width: 100%;
             }
           }
           @media (max-width: 479px) {

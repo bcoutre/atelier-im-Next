@@ -12,11 +12,7 @@ const Slide = (props) => {
         <div className="slide-max-width max-content-container">
           <div className="slide-left-side">
             <div className="slide-decorations-container">
-              <img
-                alt="image"
-                src="/playground_assets/union-200h.png"
-                className="slide-dots"
-              />
+              <img alt="image" src="/union-200h.png" className="slide-dots" />
               <div className="slide-squares-container">
                 <div className="slide-light-green"></div>
                 <div className="slide-orange"></div>
