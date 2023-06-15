@@ -38,7 +38,7 @@ class CustomDocument extends Document {
           <noscript
             dangerouslySetInnerHTML={{
               __html:
-                '</noscript><style>\n::placeholder{\ncolor: #63667066;\n}\n</style><noscript>',
+                '</noscript><style>\n::placeholder{\ncolor: #63667066;\n}\n</style>\n\n<link rel="canonical"><noscript>',
             }}
           ></noscript>
         </Head>

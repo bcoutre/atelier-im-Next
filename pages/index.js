@@ -11,12 +11,12 @@ const Home = (props) => {
           <title>Atelier Informatique et Media</title>
           <meta
             name="description"
-            content="Vente, dépannage, réparation, configuration en informatique"
+            content="Vente, dépannage, réparation, configuration en informatique\nInformatique \nImprimante\nRéseau\n"
           />
           <meta property="og:title" content="Atelier Informatique et Media" />
           <meta
             property="og:description"
-            content="Vente, dépannage, réparation, configuration en informatique"
+            content="Vente, dépannage, réparation, configuration en informatique\nInformatique \nImprimante\nRéseau\n"
           />
         </Head>
         <main className="home-main">
