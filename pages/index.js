@@ -303,14 +303,25 @@ const Home = (props) => {
           }
           @media (max-width: 991px) {
             .home-max-width {
+              padding-right: var(--dl-space-space-oneandhalfunits);
               flex-direction: column;
             }
             .home-content-container {
               margin-bottom: 42px;
               padding-right: 0px;
             }
+            .home-input-container {
+              margin-bottom: 0px;
+            }
           }
           @media (max-width: 479px) {
+            .home-max-width {
+              padding-right: var(--dl-space-space-oneandhalfunits);
+            }
+            .home-image {
+              width: 408px;
+              height: 394px;
+            }
             .home-input-container {
               flex-direction: column;
             }
