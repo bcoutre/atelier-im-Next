@@ -25,7 +25,7 @@ const Home = (props) => {
               <div className="home-image-container">
                 <img
                   alt="image"
-                  src="/logo_site-500h.png"
+                  src="/logo_ai_site-500h.png"
                   loading="eager"
                   className="home-image"
                 />
