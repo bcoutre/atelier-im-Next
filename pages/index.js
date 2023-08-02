@@ -146,6 +146,7 @@ const Home = (props) => {
             width: 468px;
             height: 476px;
             object-fit: cover;
+            margin-right: var(--dl-space-space-unit);
           }
           .home-content-container {
             flex: 1;
@@ -306,12 +307,21 @@ const Home = (props) => {
               padding-right: var(--dl-space-space-oneandhalfunits);
               flex-direction: column;
             }
+            .home-image {
+              margin-bottom: var(--dl-space-space-unit);
+            }
             .home-content-container {
               margin-bottom: 42px;
               padding-right: 0px;
             }
             .home-input-container {
               margin-bottom: 0px;
+            }
+          }
+          @media (max-width: 767px) {
+            .home-image {
+              margin-top: 0px;
+              margin-bottom: var(--dl-space-space-unit);
             }
           }
           @media (max-width: 479px) {
