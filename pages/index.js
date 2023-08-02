@@ -25,7 +25,7 @@ const Home = (props) => {
               <div className="home-image-container">
                 <img
                   alt="image"
-                  src="/logo_ai_site-500h.png"
+                  src="/logo_ai.svg"
                   loading="eager"
                   className="home-image"
                 />
@@ -321,6 +321,7 @@ const Home = (props) => {
             .home-image {
               width: 408px;
               height: 394px;
+              margin-bottom: var(--dl-space-space-unit);
             }
             .home-input-container {
               flex-direction: column;
