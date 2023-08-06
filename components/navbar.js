@@ -187,8 +187,8 @@ const Navbar = (props) => {
 }
 
 Navbar.defaultProps = {
-  image_src: '/logo-1500h.png',
-  image_src1: '/logo-1500h.png',
+  image_src: 'https://play.teleporthq.io/static/svg/placeholders/no-image.svg',
+  image_src1: 'https://play.teleporthq.io/static/svg/placeholders/no-image.svg',
   image_alt: 'logo',
   image_alt1: 'image',
   text: 'Follow us',

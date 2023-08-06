@@ -38,7 +38,7 @@ const Home = (props) => {
               <div className="home-image-container">
                 <img
                   alt="image"
-                  src="/logo_ai.svg"
+                  src="/logo_ai_2.svg"
                   loading="eager"
                   className="home-image"
                 />
