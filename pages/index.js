@@ -356,6 +356,7 @@ const Home = (props) => {
           }
           @media (max-width: 767px) {
             .home-container1 {
+              display: none;
               background-color: #ffffff;
             }
             .home-image {
