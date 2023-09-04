@@ -145,7 +145,7 @@ const Home = (props) => {
             flex: 0 0 auto;
             width: 100%;
             height: 39px;
-            display: flex;
+            display: none;
             align-items: flex-start;
             justify-content: center;
           }
