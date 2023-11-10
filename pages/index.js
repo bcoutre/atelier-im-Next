@@ -78,8 +78,7 @@ const Home = (props) => {
                     </span>
                   </div>
                 </div>
-                <span className="home-text7"></span>
-                <span className="home-text8">Accueil sur rendez-vous :</span>
+                <span className="home-text7">Accueil sur rendez-vous :</span>
                 <div className="home-input-container">
                   <div className="home-container2 input">
                     <a href="tel:+33614828570" className="home-link">
@@ -115,7 +114,7 @@ const Home = (props) => {
             </div>
           </div>
         </main>
-        <Footer></Footer>
+        <Footer rootClassName="footer-root-class-name"></Footer>
       </div>
       <style jsx>
         {`
@@ -196,7 +195,7 @@ const Home = (props) => {
           .home-features-container {
             flex: 0 0 auto;
             width: 100%;
-            display: flex;
+            display: none;
             align-items: flex-start;
             flex-direction: column;
           }
@@ -264,10 +263,8 @@ const Home = (props) => {
             font-weight: 400;
           }
           .home-text7 {
-            align-self: center;
-          }
-          .home-text8 {
             color: var(--dl-color-grays-gray60);
+            display: none;
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
@@ -317,7 +314,6 @@ const Home = (props) => {
             line-height: 1.5;
             padding-top: var(--dl-space-space-unit);
             border-width: 0px;
-            margin-right: var(--dl-space-space-halfunit);
             padding-left: var(--dl-space-space-oneandhalfunits);
             border-radius: 32px;
             padding-right: var(--dl-space-space-oneandhalfunits);
@@ -338,6 +334,28 @@ const Home = (props) => {
             text-decoration: underline;
             background-color: var(--dl-color-backgrounds-gray);
           }
+          @media (max-width: 1600px) {
+            .home-features-container {
+              display: none;
+            }
+            .home-text7 {
+              display: none;
+            }
+          }
+          @media (max-width: 1200px) {
+            .home-hero {
+              width: 1146px;
+            }
+            .home-max-width {
+              padding-left: var(--dl-space-space-unit);
+            }
+            .home-features-container {
+              display: none;
+            }
+            .home-text7 {
+              display: none;
+            }
+          }
           @media (max-width: 991px) {
             .home-max-width {
               padding-right: var(--dl-space-space-oneandhalfunits);
@@ -349,6 +367,12 @@ const Home = (props) => {
             .home-content-container {
               margin-bottom: 42px;
               padding-right: 0px;
+            }
+            .home-features-container {
+              display: none;
+            }
+            .home-text7 {
+              display: none;
             }
             .home-input-container {
               margin-bottom: 0px;
@@ -363,6 +387,18 @@ const Home = (props) => {
               margin-top: var(--dl-space-space-unit);
               margin-bottom: var(--dl-space-space-unit);
             }
+            .home-content-container {
+              margin-bottom: 0px;
+            }
+            .home-features-container {
+              display: none;
+            }
+            .home-text7 {
+              display: none;
+            }
+            .home-input-container {
+              width: 499px;
+            }
           }
           @media (max-width: 479px) {
             .home-max-width {
@@ -373,16 +409,37 @@ const Home = (props) => {
               height: 394px;
               margin-bottom: var(--dl-space-space-unit);
             }
+            .home-content-container {
+              align-items: center;
+            }
+            .home-features-container {
+              display: none;
+            }
+            .home-text7 {
+              display: none;
+            }
             .home-input-container {
+              height: 144px;
+              align-self: center;
+              align-items: center;
               flex-direction: column;
             }
             .home-container2 {
+              height: 24px;
               max-width: 100%;
+              align-self: center;
+              padding-left: 0px;
               margin-bottom: var(--dl-space-space-unit);
+              justify-content: center;
+            }
+            .home-link1 {
+              text-align: center;
             }
             .home-container3 {
+              height: 37px;
               max-width: 100%;
-              margin-bottom: var(--dl-space-space-unit);
+              margin-right: 0px;
+              margin-bottom: 0px;
             }
           }
         `}

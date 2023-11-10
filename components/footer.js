@@ -1,9 +1,13 @@
 import React from 'react'
 
+import PropTypes from 'prop-types'
+
 const Footer = (props) => {
   return (
     <>
-      <footer className="footer-footer section-container">
+      <footer
+        className={`footer-footer section-container ${props.rootClassName} `}
+      >
         <div className="footer-max-width max-content-container">
           <div className="footer-container">
             <span className="footer-text">
@@ -103,6 +107,14 @@ const Footer = (props) => {
             width: 24px;
             height: 24px;
           }
+          .footer-root-class-name {
+            display: none;
+          }
+          @media (max-width: 1600px) {
+            .footer-root-class-name {
+              display: none;
+            }
+          }
           @media (max-width: 991px) {
             .footer-max-width {
               flex-direction: column-reverse;
@@ -110,11 +122,32 @@ const Footer = (props) => {
             .footer-container {
               width: 100%;
             }
+            .footer-root-class-name {
+              display: none;
+            }
+          }
+          @media (max-width: 767px) {
+            .footer-root-class-name {
+              display: none;
+            }
+          }
+          @media (max-width: 479px) {
+            .footer-root-class-name {
+              display: none;
+            }
           }
         `}
       </style>
     </>
   )
+}
+
+Footer.defaultProps = {
+  rootClassName: '',
+}
+
+Footer.propTypes = {
+  rootClassName: PropTypes.string,
 }
 
 export default Footer
