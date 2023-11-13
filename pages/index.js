@@ -314,6 +314,7 @@ const Home = (props) => {
             line-height: 1.5;
             padding-top: var(--dl-space-space-unit);
             border-width: 0px;
+            margin-right: var(--dl-space-space-halfunit);
             padding-left: var(--dl-space-space-oneandhalfunits);
             border-radius: 32px;
             padding-right: var(--dl-space-space-oneandhalfunits);
@@ -419,9 +420,11 @@ const Home = (props) => {
               display: none;
             }
             .home-input-container {
+              width: 440px;
               height: 144px;
               align-self: center;
               align-items: center;
+              margin-right: 0px;
               flex-direction: column;
             }
             .home-container2 {
@@ -438,8 +441,10 @@ const Home = (props) => {
             .home-container3 {
               height: 37px;
               max-width: 100%;
+              align-self: center;
               margin-right: 0px;
               margin-bottom: 0px;
+              justify-content: center;
             }
           }
         `}
