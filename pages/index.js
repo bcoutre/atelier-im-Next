@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import { Analytics } from "@vercel/analytics/next";
 
 import Footer from "../components/footer";
 
@@ -115,9 +114,7 @@ const Home = (props) => {
             </div>
           </div>
         </main>
-        <Footer rootClassName="footer-root-class-name">
-          <Analytics />
-        </Footer>
+        <Footer rootClassName="footer-root-class-name"></Footer>
       </div>
       <style jsx>
         {`
