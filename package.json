@@ -4,21 +4,21 @@
   "description": "A next project generated based on a UIDL document",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "lint": "next lint"
   },
   "author": "TeleportHQ",
   "license": "MIT",
   "dependencies": {
-    "next": "^12.1.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "prop-types": "15.7.2"
+    "@vercel/analytics": "^1.5.0",
+    "next": "^15.4.4",
+    "prop-types": "15.7.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "engines": {
     "node": ">=18.x"
-  },
-  "devDependencies": {}
+  }
 }
